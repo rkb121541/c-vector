@@ -4,7 +4,7 @@
 
 typedef enum {
   TYPE_INT,
-  TYPE_FLOAT,
+  TYPE_DOUBLE,
   TYPE_CHAR,
   TYPE_STRING
 } DataType;
@@ -29,8 +29,8 @@ Vector* initializeVector(DataType datatype) {
     case TYPE_INT:
       v->elemSize = sizeof(int);
       break;
-    case TYPE_FLOAT:
-      v->elemSize = sizeof(float);
+    case TYPE_DOUBLE:
+      v->elemSize = sizeof(double);
       break;
     case TYPE_CHAR:
       v->elemSize = sizeof(char);
@@ -78,8 +78,8 @@ void printVector(Vector* v) {
       case TYPE_INT:
         printf("%d", *(int*)elem);
         break;
-      case TYPE_FLOAT:
-        printf("%.2f", *(float*)elem);
+      case TYPE_DOUBLE:
+        printf("%.4f", *(double*)elem);
         break;
       case TYPE_CHAR:
         printf("%c", *(char*)elem);
