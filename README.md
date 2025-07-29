@@ -13,7 +13,7 @@ int getIndex(const Vector* v, void* element); // returns the index where the ele
 void* getElement(Vector* v, int index); // returns the element at the specified index
 int removeIndex(Vector* v, int index); // returns -1 if error, 0 if no error
 int removeElement(Vector* v, void* element); // returns -1 if error, 0 if no error
-void printVector(Vector* v);
+void printVector(const Vector* v);
 void deleteVector(Vector* v);
 ```
 
