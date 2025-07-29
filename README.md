@@ -19,3 +19,14 @@ TYPE_DOUBLE,
 TYPE_CHAR,
 TYPE_STRING
 ```
+
+TODO:
+
+Create the following functions:
+
+```c
+int insertElement(Vector* v, void* element, int index);
+int addElementFront(Vector* v, void* element);
+int removeElement(Vector* v, void* element);
+int removeIndex(Vector* v, int index);
+```
